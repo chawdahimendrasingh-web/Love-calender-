@@ -237,6 +237,31 @@
   /* ── Footer ── */
   footer { text-align: center; font-size: .72rem; color: rgba(138,90,104,.5); letter-spacing: .06em; }
   footer strong { color: var(--rose); font-weight: 400; }
+
+  /* ── Nav Link ── */
+  .nav-link {
+    display: inline-flex; align-items: center; gap: .55rem;
+    text-decoration: none;
+    background: linear-gradient(135deg, rgba(196,82,106,.18), rgba(201,149,108,.12));
+    border: 1px solid rgba(196,82,106,.4);
+    border-radius: 999px;
+    padding: .55rem 1.4rem;
+    font-size: .82rem; font-family: 'DM Sans', sans-serif;
+    color: var(--blush); letter-spacing: .06em;
+    transition: background .3s, border-color .3s, transform .2s, box-shadow .3s;
+    box-shadow: 0 4px 18px rgba(196,82,106,.1);
+  }
+  .nav-link:hover {
+    background: linear-gradient(135deg, rgba(196,82,106,.28), rgba(201,149,108,.2));
+    border-color: rgba(201,149,108,.65);
+    color: var(--petal);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(196,82,106,.22);
+  }
+  .nav-link .nav-arrow {
+    font-size: .75rem; transition: transform .2s;
+  }
+  .nav-link:hover .nav-arrow { transform: translateX(3px); }
 </style>
 </head>
 <body>
@@ -253,6 +278,9 @@
     <div class="start-badge">
       ♡ Started on <span>7 February 2024 &nbsp;·&nbsp; 6:34 PM</span>
     </div>
+    <a href="subsite/index.html" class="nav-link">
+      📅 &nbsp;Our Love Calendar <span class="nav-arrow">→</span>
+    </a>
   </header>
 
   <div class="counter-card">
